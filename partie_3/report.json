@@ -1,0 +1,33 @@
+{
+  "report": {
+    "generated_at": "2026-05-30T16:01:31.259293",
+    "total_alerts": 2,
+    "alerts": [
+      {
+        "id": 1,
+        "timestamp": "2025-05-30T10:45:00",
+        "severity": "critical",
+        "alert_type": "weak_cipher",
+        "source_ip": "192.168.1.10",
+        "dest_ip": "8.8.8.8",
+        "details": "{\"tls_version\": \"TLS 1.0\", \"cipher_suite\": \"TLS_RSA_WITH_RC4_128_MD5\", \"message\": \"Cipher suite tr\\u00e8s faible d\\u00e9tect\\u00e9e\"}",
+        "signed_data": "{\"alert_type\": \"weak_cipher\", \"dest_ip\": \"8.8.8.8\", \"details\": {\"cipher_suite\": \"TLS_RSA_WITH_RC4_128_MD5\", \"message\": \"Cipher suite tr\\u00e8s faible d\\u00e9tect\\u00e9e\", \"tls_version\": \"TLS 1.0\"}, \"severity\": \"critical\", \"source_ip\": \"192.168.1.10\", \"timestamp\": \"2025-05-30T10:45:00\"}",
+        "signature": "MEUCIG5pzujM0FvrMWhVoQT+nK3dGHGfxvCGt8ydC0QZnaGAAiEA8UVEQcMwtsras5uu1A9uC0BSJBMPQrRctnQ4cTIgq74=",
+        "verified": 1
+      },
+      {
+        "id": 2,
+        "timestamp": "2025-05-30T10:45:00",
+        "severity": "critical",
+        "alert_type": "weak_cipher",
+        "source_ip": "192.168.1.10",
+        "dest_ip": "8.8.8.8",
+        "details": "{\"tls_version\": \"TLS 1.0\", \"cipher_suite\": \"TLS_RSA_WITH_RC4_128_MD5\", \"message\": \"Cipher suite tr\\u00e8s faible d\\u00e9tect\\u00e9e\"}",
+        "signed_data": "{\"alert_type\": \"weak_cipher\", \"dest_ip\": \"8.8.8.8\", \"details\": {\"cipher_suite\": \"TLS_RSA_WITH_RC4_128_MD5\", \"message\": \"Cipher suite tr\\u00e8s faible d\\u00e9tect\\u00e9e\", \"tls_version\": \"TLS 1.0\"}, \"severity\": \"critical\", \"source_ip\": \"192.168.1.10\", \"timestamp\": \"2025-05-30T10:45:00\"}",
+        "signature": "MEYCIQDUW2lU3npy9qahSoZw6DKePrnHkYtIvvWhVxYihOocuQIhAP3Tdvr5F6LcrRkVK56TTg7P8MmElNAn1yGftGtnnBKH",
+        "verified": 1
+      }
+    ]
+  },
+  "report_signature": "MEUCIQDg3tg4iM2u4GU33r30AskidBVerPqyy7ohDcpvVGO7OwIgTOn7AE3i3CB1cGxPclByNI46RaF72/1w5BAcISgVmlY="
+}

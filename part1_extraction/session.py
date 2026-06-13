@@ -108,7 +108,7 @@ def sessions_depuis_pcap(chemin_pcap):
             
             session = construire_session(paquet, paquet_serveur)
             sessions.append(session)
-            print(f"  [+] Session trouvée : {session['src_ip']} → {session['dst_ip']} "
+            print(f"  [+] Session trouvee : {session['src_ip']} -> {session['dst_ip']} "
                   f"| JA3: {session['empreintes']['ja3']}")
     
     print(f"\n[+] Total : {len(sessions)} sessions TLS extraites")
@@ -147,8 +147,8 @@ def afficher_session(session):
     if session.get("certificat"):
         cert = session["certificat"]
         print(f"  Certificat  : {cert.get('subject', 'N/A')}")
-        print(f"  Expiré      : {'OUI ⚠️' if cert.get('est_expire') else 'NON ✓'}")
-        print(f"  Auto-signé  : {'OUI ⚠️' if cert.get('est_auto_signe') else 'NON ✓'}")
+        print(f"  Expire      : {'OUI !' if cert.get('est_expire') else 'NON OK'}")
+        print(f"  Auto-signe  : {'OUI !' if cert.get('est_auto_signe') else 'NON OK'}")
     
     print("="*60)
 
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     import sys
     
     print("="*60)
-    print("  PARTIE 1 — EXTRACTION TLS")
+    print("  PARTIE 1 - EXTRACTION TLS")
     print("="*60)
     
     if len(sys.argv) > 1:

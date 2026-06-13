@@ -3,9 +3,16 @@ __pycache__/
 *.pyo
 part1_extraction/__pycache__/
 sessions_tls.json
+alerts.json
+report.json
 code.py
 venv/
+.venv/
+.deps/
 .env
 part3_signature/keys/
+keys/
 *.pem
 alerts.db
+capture_test.pcap
+capture_test.pcapng

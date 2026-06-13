@@ -108,8 +108,8 @@ def afficher_certificat(info_cert):
     print(f"  Issuer       : {info_cert['issuer']}")
     print(f"  Valide du    : {info_cert['valide_depuis']}")
     print(f"  Valide jusqu : {info_cert['valide_jusqu']}")
-    print(f"  Expiré       : {'OUI ⚠️' if info_cert['est_expire'] else 'NON ✓'}")
-    print(f"  Auto-signé   : {'OUI ⚠️' if info_cert['est_auto_signe'] else 'NON ✓'}")
+    print(f"  Expire       : {'OUI !' if info_cert['est_expire'] else 'NON OK'}")
+    print(f"  Auto-signe   : {'OUI !' if info_cert['est_auto_signe'] else 'NON OK'}")
     print(f"  Jours restants: {info_cert['jours_restants']}")
     if info_cert['san']:
         print(f"  SAN          : {', '.join(info_cert['san'])}")
@@ -118,4 +118,4 @@ def afficher_certificat(info_cert):
 
 # ─── TEST ───────────────────────────────────────────────
 if __name__ == "__main__":
-    print("[*] cert_parser.py — s'utilise importé depuis session.py")
+    print("[*] cert_parser.py - s'utilise importe depuis session.py")
